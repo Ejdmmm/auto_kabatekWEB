@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoservis Kabátek | Profesionální péče o vaše vozidlo</title>
+    <meta name="description" content="Autoservis Kabátek – komplexní servis, pneuservis a STK pro osobní a dodávkové vozy všech značek.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGACE -->
+    <nav id="main-nav">
+        <a href="#" class="logo" aria-label="Autoservis Kabátek – domů">
+            <span class="logo-icon"><i class="fas fa-wrench"></i></span>
+            <span class="logo-text">AUTO<span>KABÁTEK</span></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#pneuservis">Pneuservis</a></li>
+            <li><a href="#stk">STK & Emise</a></li>
+            <li><a href="#o-nas">O nás</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="tel:+420603445869" class="nav-phone">
+                <i class="fas fa-phone"></i>
+                <span>Zavolat</span>
+            </a>
+            <a href="#kontakt" class="nav-cta">Objednat se</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILNÍ MENU -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <a href="#sluzby"    onclick="closeMobileNav()">Služby</a>
+        <a href="#pneuservis" onclick="closeMobileNav()">Pneuservis</a>
+        <a href="#stk"      onclick="closeMobileNav()">STK & Emise</a>
+        <a href="#o-nas"    onclick="closeMobileNav()">O nás</a>
+        <a href="#kontakt"  onclick="closeMobileNav()">Kontakt</a>
+        <a href="tel:+420603445869" class="mobile-phone"><i class="fas fa-phone"></i> Zavolat</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                 alt="Autoservis" width="1600" height="900" loading="eager">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Profesionální servis od roku 1993</div>
+            <h1>Vaše auto<br>v dobrých <em>rukou</em></h1>
+            <p>Komplexní servis osobních a dodávkových vozů všech značek.<br>STK, pneuservis, diagnostika — vše na jednom místě.</p>
+            <div class="hero-actions">
+                <a href="#kontakt" class="btn-primary">Objednat se online</a>
+                <a href="#sluzby" class="btn-ghost">Naše služby</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-num">30+</span>
+                <span class="stat-label">let zkušeností</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">5000+</span>
+                <span class="stat-label">spokojených zákazníků</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num">všechny</span>
+                <span class="stat-label">značky vozidel</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-banner">
+        <div class="info-banner-inner">
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <strong>Provozní doba</strong>
+                    <span>Po–Pá: 7:30 – 17:00</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <strong>Adresa</strong>
+                    <span>Český dub, Sobotice 15 </span>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <strong>Telefon</strong>
+                    <a href="tel:+420603445869"> +420 603 445 869</a>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <strong>STK na místě</strong>
+                    <span>Vlastní stanice technické kontroly</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLUŽBY -->
+    <section class="section" id="sluzby">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Co nabízíme</span>
+                <h2>Komplexní<br><em>autoservis</em></h2>
+                <p>Veškeré servisní práce na osobních a dodávkových vozech – od diagnostiky po lakýrnické práce.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card featured" data-index="0">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Mechanické opravy</h3>
+                    <p>Brzdy, tlumiče, čepy, spojky, výfuky, poloosy a veškeré mechanické součásti vašeho vozu.</p>
+                    <ul class="service-list">
+                        <li>Výměna brzd a tlumičů</li>
+                        <li>Opravy výfukového systému</li>
+                        <li>Výměna spojkové sady</li>
+                        <li>Opravy poloos a čepů</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">Objednat <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-index="1">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Diagnostika</h3>
+                    <p>Moderní diagnostika řídících jednotek motorů, geometrie náprav a seřízení světlometů.</p>
+                    <ul class="service-list">
+                        <li>Diagnostika řídících jednotek</li>
+                        <li>Seřízení geometrie náprav</li>
+                        <li>Seřízení světlometů</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">Objednat <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-index="2">
+                    <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Servisní prohlídky</h3>
+                    <p>Záruční, pozáruční i běžné servisní prohlídky. Připravíme váš vůz na STK a měření emisí.</p>
+                    <ul class="service-list">
+                        <li>Záruční prohlídky</li>
+                        <li>Pozáruční servis</li>
+                        <li>Příprava na STK a emise</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">Objednat <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-index="3">
+                    <div class="service-icon"><i class="fas fa-oil-can"></i></div>
+                    <h3>Provozní kapaliny</h3>
+                    <p>Výměna a prodej oleje motoru, převodovky, diferenciálu, chladicí a brzdové kapaliny.</p>
+                    <ul class="service-list">
+                        <li>Olej motoru a filtr</li>
+                        <li>Chladicí kapalina</li>
+                        <li>Brzdová kapalina</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">Objednat <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-index="4">
+                    <div class="service-icon"><i class="fas fa-snowflake"></i></div>
+                    <h3>Klimatizace</h3>
+                    <p>Plnění, čištění, dezinfekce a opravy klimatizačních systémů osobních i dodávkových vozů.</p>
+                    <ul class="service-list">
+                        <li>Plnění chladiva</li>
+                        <li>Čištění a dezinfekce</li>
+                        <li>Opravy klimatizace</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">Objednat <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-index="5">
+                    <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+                    <h3>Lakýrnické práce</h3>
+                    <p>Opravy a renovace laků, ochranné nástřiky dutin a podvozků. Likvidace pojistných událostí.</p>
+                    <ul class="service-list">
+                        <li>Renovace laku</li>
+                        <li>Ochranné nástřiky</li>
+                        <li>Pojistné události</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">Objednat <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="pneuservis">
+        <div class="container">
+            <div class="split-layout">
+                <div class="split-image">
+                    <img src="https://images.pexels.com/photos/4489794/pexels-photo-4489794.jpeg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Pneuservis – montáž pneumatik" width="800" height="600" loading="lazy">
+                    <div class="split-image-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Certifikovaný pneuservis</span>
+                    </div>
+                </div>
+                <div class="split-content">
+                    <span class="section-tag light">Pneuservis</span>
+                    <h2>Pneumatiky<br><em>od A do Z</em></h2>
+                    <p>Kompletní pneuservis pro osobní a dodávkové automobily. Moderní strojní vybavení, momentový klíč na každé kolo, plnění inertním plynem pro delší životnost.</p>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                            <div>
+                                <strong>Montáž a vyvažování</strong>
+                                <span>Demontáž, montáž a vyvažování kol na moderním zařízení</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-warehouse"></i></div>
+                            <div>
+                                <strong>Uskladnění pneumatik</strong>
+                                <span>Sezónní skladování letních a zimních pneumatik dle norem ČSN</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-store"></i></div>
+                            <div>
+                                <strong>Prodej pneumatik</strong>
+                                <span>Pneumatiky všech tříd pro osobní i dodávkové vozy</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-recycle"></i></div>
+                            <div>
+                                <strong>Ekologická likvidace</strong>
+                                <span>Zajistíme ekologickou likvidaci ojetých pneumatik za vás</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#kontakt" class="btn-primary">Objednat pneuservis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="stk">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Stanice technické kontroly</span>
+                <h2>STK & Emise<br><em>přímo u nás</em></h2>
+                <p>Vlastní STK stanice přímo v areálu autoservisu. Technické kontroly osobních vozů, přívěsů i motocyklů.</p>
+            </div>
+
+            <div class="stk-grid">
+                <div class="stk-card">
+                    <div class="stk-number">01</div>
+                    <div class="stk-icon"><i class="fas fa-car"></i></div>
+                    <h3>Technická kontrola</h3>
+                    <p>Osobní a dodávkové vozy do 3,5 t, přívěsy, motocykly, vozidla na LPG a CNG.</p>
+                </div>
+                <div class="stk-card">
+                    <div class="stk-number">02</div>
+                    <div class="stk-icon"><i class="fas fa-smog"></i></div>
+                    <h3>Měření emisí</h3>
+                    <p>Benzinové, vznětové motory, LPG, CNG. Evidenční kontroly vozidel na místě.</p>
+                </div>
+                <div class="stk-card">
+                    <div class="stk-number">03</div>
+                    <div class="stk-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Ekologická plaketa</h3>
+                    <p>Prodej ekologické plakety pro vjezd do nízko emisních zón v zahraničí.</p>
+                </div>
+                <div class="stk-card">
+                    <div class="stk-number">04</div>
+                    <div class="stk-icon"><i class="fas fa-wrench"></i></div>
+                    <h3>Příprava na STK</h3>
+                    <p>Kompletní příprava vozidla tak, aby prošlo technickou kontrolou bez závad.</p>
+                </div>
+            </div>
+
+            <div class="stk-docs">
+                <div class="stk-docs-inner">
+                    <div class="stk-docs-icon"><i class="fas fa-file-alt"></i></div>
+                    <div>
+                        <h4>Potřebné doklady k STK</h4>
+                        <p>Velký technický průkaz (originál) · Osvědčení o registraci vozidla (malý TP) · Osvědčení o měření emisí</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="o-nas">
+        <div class="container">
+            <div class="split-layout reverse">
+                <div class="split-content">
+                    <span class="section-tag light">O nás</span>
+                    <h2>Tradice<br><em>a spolehlivost</em></h2>
+                    <p>Autoservis Kabátek provádí servis osobních a dodávkových automobilů všech značek od roku 1993. Při každém úkonu používáme technologii oprav doporučenou výrobcem.</p>
+                    <p>Používáme originální náhradní díly, případně díly kvalitativně rovnocenné originálním za příznivější ceny. Pravidelnými prohlídkami zajistíme bezproblémový provoz a dlouhou životnost vašeho vozu.</p>
+
+                    <div class="hours-table">
+                        <div class="hours-title"><i class="fas fa-clock"></i> Provozní doba</div>
+                        <div class="hours-row"><span>Pondělí – Pátek</span><span class="hours-time">07:30 – 17:00</span></div>
+                        <div class="hours-row closed"><span>Sobota – Neděle</span><span class="hours-time">Zavřeno</span></div>
+                    </div>
+                </div>
+                <div class="split-image">
+                    <img src="https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Autoservis – mechanik při práci" width="800" height="600" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section why-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Proč Kabátek</span>
+                <h2>Naše <em>výhody</em></h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="fas fa-medal"></i>
+                    <h4>30+ let zkušeností</h4>
+                    <p>Desetiletí praxe se všemi typy vozidel a oprav.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-tags"></i>
+                    <h4>Férové ceny</h4>
+                    <p>Transparentní ceník, žádné skryté poplatky.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Vše na jednom místě</h4>
+                    <p>Servis, pneuservis i STK bez nutnosti jezdit jinam.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Originální díly</h4>
+                    <p>Používáme originální nebo rovnocenné náhradní díly.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-car-crash"></i>
+                    <h4>Pojistné události</h4>
+                    <p>Kompletní vyřízení pojistné události za vás.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-glass-windshield"></i>
+                    <h4>Autoskla zdarma</h4>
+                    <p>Výměna autoskel při havarijním pojištění zdarma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="kontakt">
+        <div class="container">
+            <div class="section-header light-header">
+                <span class="section-tag light">Kontakt</span>
+                <h2>Objednejte se<br><em>online</em></h2>
+                <p>Vyplňte formulář a my vás do 24 hodin kontaktujeme pro potvrzení termínu.</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="booking-form" action="https://formspree.io/f/XXXXXXXX" method="POST" novalidate>
+                        <input type="hidden" name="_subject" value="Nová online rezervace – Autoservis Kabátek">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="jmeno">Jméno a příjmení *</label>
+                                <input type="text" id="jmeno" name="jmeno" placeholder="Jan Novák" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefon">Telefonní číslo *</label>
+                                <input type="tel" id="telefon" name="telefon" placeholder="+420 777 888 999" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="jan@email.cz" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="vozidlo">Vozidlo (značka + model)</label>
+                                <input type="text" id="vozidlo" name="vozidlo" placeholder="např. Škoda Octavia 2019">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sluzba">Typ služby *</label>
+                            <select id="sluzba" name="sluzba" required>
+                                <option value="" disabled selected>Vyberte službu...</option>
+                                <option>Mechanická oprava</option>
+                                <option>Diagnostika</option>
+                                <option>Servisní prohlídka</option>
+                                <option>Pneuservis</option>
+                                <option>STK / Měření emisí</option>
+                                <option>Klimatizace</option>
+                                <option>Lakýrnické práce</option>
+                                <option>Jiné</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="zprava">Popis problému / poznámka</label>
+                            <textarea id="zprava" name="zprava" rows="4" placeholder="Popište, co potřebujete..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width" id="submit-btn">
+                            <span>Odeslat rezervaci</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-success" id="form-success">
+                            <i class="fas fa-check-circle"></i>
+                            Odesláno! Ozveme se vám do 24 hodin.
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-info-wrap">
+                    <div class="contact-card">
+                        <h3>Kontaktní údaje</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="contact-label">Telefon</span>
+                                <a href="tel:+420603445869">+420 603 445 869</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="contact-label">E-mail</span>
+                                <a href="mailto:ales.kabatek@volny.cz">ales.kabatek@volny.cz</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="contact-label">Český Dub</span>
+                                <span>Sobotice 15</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <span class="contact-label">Provozní doba</span>
+                                <span>Po–Pá: 7:30 – 17:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            title="Mapa – Autoservis Kabátek"
+                            src="https://maps.google.com/maps?q=Sobotice+15,+Český+Dub&hl=cs&z=16&output=embed"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <span class="logo-icon"><i class="fas fa-wrench"></i></span>
+                <span class="logo-text">AUTO<span>KABÁTEK</span></span>
+            </div>
+            <p class="footer-tagline">Vozidlo bez závad — základ pro bezstarostnou jízdu.</p>
+            <div class="footer-links">
+                <a href="#sluzby">Služby</a>
+                <a href="#pneuservis">Pneuservis</a>
+                <a href="#stk">STK</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+            <p class="footer-copy">© 2026 Autoservis Kabátek s.r.o. · Všechna práva vyhrazena
+                <br>
+                                        <a href="mailto:bartosa2503@gmail.com">Created by Adam Bartoš</a>
+
+        </div>
+    </footer>
+
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookie-banner">
+        <div class="cookie-inner">
+            <p><i class="fas fa-cookie-bite"></i> Tento web používá cookies pro analytické účely.</p>
+            <div class="cookie-btns">
+                <button id="accept-cookies" class="cookie-accept">Souhlasím</button>
+                <button id="decline-cookies" class="cookie-decline">Odmítnout</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" id="scroll-top" aria-label="Zpět nahoru">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
