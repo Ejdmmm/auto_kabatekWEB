@@ -1,10 +1,4 @@
-/* =========================================
-   AUTOSERVIS KABÁTEK – style.css
-   Téma: Tmavý průmyslový prémiový design
-   Fonty: Bebas Neue + Inter
-   ========================================= */
 
-/* --- RESET & PROMĚNNÉ --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -828,9 +822,6 @@ nav.scrolled { box-shadow: 0 2px 32px rgba(0,0,0,0.6); }
     line-height: 1.6;
 }
 
-/* =========================================
-   KONTAKT
-   ========================================= */
 .contact-layout {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
@@ -1035,6 +1026,13 @@ footer {
     color: rgba(255,255,255,0.2);
     margin-top: 4px;
 }
+.footer-copy a {
+    color: rgba(255,255,255,0.7);
+    transition: color var(--transition);
+}
+.footer-copy a:hover {
+    color: var(--red);
+}
 
 /* =========================================
    COOKIE BANNER
@@ -1095,9 +1093,6 @@ footer {
 }
 .cookie-decline:hover { color: var(--white); }
 
-/* =========================================
-   SCROLL TO TOP
-   ========================================= */
 .scroll-top {
     position: fixed;
     bottom: 28px; right: 28px;
@@ -1120,9 +1115,6 @@ footer {
 .scroll-top.visible { opacity: 1; transform: translateY(0); }
 .scroll-top:hover { background: var(--red-hover); }
 
-/* =========================================
-   ANIMACE
-   ========================================= */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(32px); }
     to   { opacity: 1; transform: translateY(0); }
